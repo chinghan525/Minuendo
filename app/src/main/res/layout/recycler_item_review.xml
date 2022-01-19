@@ -3,7 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="250dp"
-    android:layout_height="300dp"
+    android:layout_height="280dp"
     android:layout_margin="8dp"
     android:orientation="vertical"
     card_view:cardBackgroundColor="@color/white"
@@ -26,6 +26,7 @@
             android:id="@+id/tvUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_extra_small"
             android:textColor="@color/black"
             android:textStyle="bold"
             tools:text="User" />

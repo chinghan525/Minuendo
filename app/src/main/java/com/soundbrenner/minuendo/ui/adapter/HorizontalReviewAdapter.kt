@@ -43,9 +43,8 @@ class HorizontalReviewAdapter(private val list: MutableList<ReviewsModel>) :
 
         for (i in 1..listData.reviewStars) {
             val imageview = ImageView(holder.itemView.context).apply {
-                val startPadding = if (i == 1) 0 else 8
-                setPadding(startPadding, 0, 0, 0)
-                layoutParams = LinearLayout.LayoutParams(80, 80)
+                setPadding(2, 0, 2, 0)
+                layoutParams = LinearLayout.LayoutParams(60, 60)
             }
             Glide.with(holder.itemView.context)
                 .load(R.drawable.ic_star)
