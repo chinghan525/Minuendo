@@ -42,13 +42,17 @@
                 android:layout_marginTop="@dimen/common_padding"
                 android:orientation="vertical">
 
-                <include layout="@layout/activity_product_video" />
-
-                <include layout="@layout/activity_product_function" />
+                <include
+                    android:id="@+id/productVideoView"
+                    layout="@layout/view_product_video" />
 
                 <include
-                    android:id="@+id/productDescView"
-                    layout="@layout/activity_product_function_description" />
+                    android:id="@+id/productFunctionView"
+                    layout="@layout/view_product_function" />
+
+                <include
+                    android:id="@+id/productFuncDescView"
+                    layout="@layout/view_product_function_description" />
 
                 <include
                     android:id="@+id/reviewView"

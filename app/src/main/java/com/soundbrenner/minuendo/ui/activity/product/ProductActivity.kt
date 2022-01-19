@@ -30,7 +30,7 @@ class ProductActivity : BaseActivity<IProductContract.P, IProductContract.V>(), 
         Glide.with(this)
             .asGif()
             .load(R.raw.minuendosteplessadjustments)
-            .into(binding.productDescView.ivGif)
+            .into(binding.productFuncDescView.ivGif)
 
         binding.reviewView.tvShowAllReviews.apply {
             movementMethod = LinkMovementMethod.getInstance()
