@@ -10,6 +10,7 @@ import com.soundbrenner.minuendo.base.BaseActivity
 import com.soundbrenner.minuendo.data.DataSource
 import com.soundbrenner.minuendo.databinding.ActivityProductBinding
 import com.soundbrenner.minuendo.ui.adapter.HorizontalImagesAdapter
+import com.soundbrenner.minuendo.ui.adapter.HorizontalImagesInBoxAdapter
 import org.koin.android.ext.android.inject
 
 class ProductActivity : BaseActivity<IProductContract.P, IProductContract.V>(), IProductContract.V {
@@ -67,6 +68,7 @@ class ProductActivity : BaseActivity<IProductContract.P, IProductContract.V>(), 
         binding.productFuncDescView.rvImagesInBox.apply {
             layoutManager =
                 LinearLayoutManager(this@ProductActivity, LinearLayoutManager.HORIZONTAL, false)
+            adapter = HorizontalImagesInBoxAdapter(DataSource.getImagesInBoxData())
         }
     }
 
