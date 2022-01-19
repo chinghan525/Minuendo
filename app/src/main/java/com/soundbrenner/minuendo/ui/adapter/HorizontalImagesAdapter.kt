@@ -33,7 +33,7 @@ class HorizontalImagesAdapter(private val list: MutableList<ImageModel>) :
         val listData = list[position]
 
         Glide.with(holder.itemView.context)
-            .load(listData.imageUrl)
+            .load(listData.imageRes)
             .into(holder.imageView)
     }
 

@@ -1,5 +1,6 @@
 package com.soundbrenner.minuendo.data
 
+import com.soundbrenner.minuendo.R
 import com.soundbrenner.minuendo.data.model.ImageInBoxModel
 import com.soundbrenner.minuendo.data.model.ImageModel
 import com.soundbrenner.minuendo.data.model.ReviewsModel
@@ -8,14 +9,10 @@ object DataSource {
 
     fun getImagesData(): MutableList<ImageModel> {
         val data: MutableList<ImageModel> = mutableListOf()
-        data.add(ImageModel("https://picsum.photos/200/300"))
-        data.add(ImageModel("https://picsum.photos/200/301"))
-        data.add(ImageModel("https://picsum.photos/200/302"))
-        data.add(ImageModel("https://picsum.photos/200/303"))
-        data.add(ImageModel("https://picsum.photos/200/304"))
-        data.add(ImageModel("https://picsum.photos/200/305"))
-        data.add(ImageModel("https://picsum.photos/200/306"))
-        data.add(ImageModel("https://picsum.photos/200/307"))
+        data.add(ImageModel(R.drawable.rectangle_1))
+        data.add(ImageModel(R.drawable.rectangle_2))
+        data.add(ImageModel(R.drawable.rectangle_3))
+        data.add(ImageModel(R.drawable.rectangle_4))
 
         return data
     }
