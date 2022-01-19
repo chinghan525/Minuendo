@@ -7,9 +7,10 @@ import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.soundbrenner.minuendo.R
+import com.soundbrenner.minuendo.data.model.ImageModel
 
 
-class HorizontalImagesAdapter(private val list: MutableList<String>) :
+class HorizontalImagesAdapter(private val list: MutableList<ImageModel>) :
     RecyclerView.Adapter<HorizontalImagesAdapter.MyView>() {
 
     class MyView(view: View) : RecyclerView.ViewHolder(view) {
@@ -32,7 +33,7 @@ class HorizontalImagesAdapter(private val list: MutableList<String>) :
         val listData = list[position]
 
         Glide.with(holder.itemView.context)
-            .load(listData)
+            .load(listData.imageUrl)
             .into(holder.imageView)
     }
 

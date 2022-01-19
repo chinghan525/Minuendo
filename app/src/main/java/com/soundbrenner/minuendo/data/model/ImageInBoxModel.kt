@@ -1,6 +1,6 @@
 package com.soundbrenner.minuendo.data.model
 
-data class ImageInBox(
+data class ImageInBoxModel(
     val imageUrl: String,
     val itemName: String,
 )

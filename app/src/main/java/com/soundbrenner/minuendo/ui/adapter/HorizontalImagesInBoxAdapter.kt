@@ -8,10 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.soundbrenner.minuendo.R
-import com.soundbrenner.minuendo.data.model.ImageInBox
+import com.soundbrenner.minuendo.data.model.ImageInBoxModel
 
 
-class HorizontalImagesInBoxAdapter(private val list: MutableList<ImageInBox>) :
+class HorizontalImagesInBoxAdapter(private val list: MutableList<ImageInBoxModel>) :
     RecyclerView.Adapter<HorizontalImagesInBoxAdapter.MyView>() {
 
     class MyView(view: View) : RecyclerView.ViewHolder(view) {
