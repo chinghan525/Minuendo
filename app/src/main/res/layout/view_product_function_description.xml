@@ -16,7 +16,9 @@
             android:id="@+id/rvImages"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:clipToPadding="false"
             android:orientation="horizontal"
+            android:padding="@dimen/common_padding_small"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -181,7 +183,8 @@
             android:id="@+id/rvImagesInBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/common_padding"
+            android:clipToPadding="false"
+            android:padding="@dimen/common_padding_small"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/llContent2" />
