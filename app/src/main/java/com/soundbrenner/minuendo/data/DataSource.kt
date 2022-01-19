@@ -19,14 +19,11 @@ object DataSource {
 
     fun getImagesInBoxData(): MutableList<ImageInBoxModel> {
         val data: MutableList<ImageInBoxModel> = mutableListOf()
-        data.add(ImageInBoxModel("https://picsum.photos/200/400", "item1"))
-        data.add(ImageInBoxModel("https://picsum.photos/200/401", "item2"))
-        data.add(ImageInBoxModel("https://picsum.photos/200/402", "item3"))
-        data.add(ImageInBoxModel("https://picsum.photos/200/403", "item4"))
-        data.add(ImageInBoxModel("https://picsum.photos/200/404", "item5"))
-        data.add(ImageInBoxModel("https://picsum.photos/200/405", "item6"))
-        data.add(ImageInBoxModel("https://picsum.photos/200/406", "item7"))
-        data.add(ImageInBoxModel("https://picsum.photos/200/407", "item8"))
+        data.add(ImageInBoxModel(R.drawable.c1, R.string.text_carrousel_item_one))
+        data.add(ImageInBoxModel(R.drawable.c2, R.string.text_carrousel_item_two))
+        data.add(ImageInBoxModel(R.drawable.c3, R.string.text_carrousel_item_three))
+        data.add(ImageInBoxModel(R.drawable.c4, R.string.text_carrousel_item_four))
+        data.add(ImageInBoxModel(R.drawable.c5, R.string.text_carrousel_item_five))
 
         return data
     }

@@ -35,10 +35,10 @@ class HorizontalImagesInBoxAdapter(private val list: MutableList<ImageInBoxModel
         val listData = list[position]
 
         Glide.with(holder.itemView.context)
-            .load(listData.imageUrl)
+            .load(listData.imageRes)
             .into(holder.imageView)
 
-        holder.tvItem.text = listData.itemName
+        holder.tvItem.setText(listData.itemName)
     }
 
     override fun getItemCount(): Int {
