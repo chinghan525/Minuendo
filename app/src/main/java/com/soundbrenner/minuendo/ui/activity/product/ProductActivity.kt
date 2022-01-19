@@ -2,6 +2,7 @@ package com.soundbrenner.minuendo.ui.activity.product
 
 import android.content.Context
 import android.content.Intent
+import android.text.method.LinkMovementMethod
 import com.bumptech.glide.Glide
 import com.soundbrenner.minuendo.R
 import com.soundbrenner.minuendo.base.BaseActivity
@@ -29,7 +30,11 @@ class ProductActivity : BaseActivity<IProductContract.P, IProductContract.V>(), 
         Glide.with(this)
             .asGif()
             .load(R.raw.minuendosteplessadjustments)
-            .into(binding.productDescView.ivGif);
+            .into(binding.productDescView.ivGif)
+
+        binding.reviewView.tvShowAllReviews.apply {
+            movementMethod = LinkMovementMethod.getInstance()
+        }
     }
 
     private fun initClick() {

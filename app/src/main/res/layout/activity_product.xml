@@ -48,7 +48,11 @@
 
                 <include
                     android:id="@+id/productDescView"
-                    layout="@layout/activity_product_description" />
+                    layout="@layout/activity_product_function_description" />
+
+                <include
+                    android:id="@+id/reviewView"
+                    layout="@layout/view_review" />
 
             </LinearLayout>
 

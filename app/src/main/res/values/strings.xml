@@ -4,6 +4,9 @@
     <string name="text_show">Show</string>
     <string name="text_title">Adjustable hearing protection with zero compromise on sound or comfort.</string>
     <string name="text_title_second">Designed for every environment</string>
+    <string name="text_title_third">In the box.</string>
+    <string name="text_title_fourth">Unmatched comfort with no loss.</string>
+    <string name="text_title_review">What musicians think.</string>
 
     <string name="text_function_one">Stepless adjustment\n(7–25dB)</string>
     <string name="text_function_two">World\'s only variable passive Hi-Fi filter</string>
@@ -16,7 +19,14 @@
     <string name="text_desc_one_sub">A flat frequency response translates to clear and natural sound. Minuendo is able to archive a frequency response on par with custom and molded earplugs.</string>
     <string name="text_desc_two">Patented membrane technology.</string>
     <string name="text_desc_two_sub">Micrometer precision craftsmanship leads to no frequency degradation like the muffled sound of existing foam earplugs.</string>
-
     <string name="text_desc_three">Stepless adjustments.</string>
     <string name="text_desc_three_sub">By manually adjusting the lever, Minuendo can easily adjust your earplugs from open (-7dB) to closed (-25dB) and everything in betwee, so you can find your sweet spot</string>
+
+    <string name="text_desc_four">Eartips that feel natural in your ear.</string>
+    <string name="text_desc_four_sub">With eleven sets of eartips, including foam, silicone and flange, you\'ll find the perfect fit without compromising on the sound</string>
+
+    <string name="text_desc_five">Magnetic locking system.</string>
+    <string name="text_desc_five_sub">With Minuendo\'s magnetic locking system, you\'ll never lose your earplugs again.\n\nEasily lock them around your neck with the leash for easy access ay anytime</string>
+
+    <string name="text_show_all_reviews"><a href="https://www.google.com/">Show all reviews</a></string>
 </resources>
