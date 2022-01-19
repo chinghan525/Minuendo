@@ -2,6 +2,7 @@ package com.soundbrenner.minuendo.ui.activity.main
 
 import com.soundbrenner.minuendo.base.BaseActivity
 import com.soundbrenner.minuendo.databinding.ActivityMainBinding
+import com.soundbrenner.minuendo.ui.activity.product.ProductActivity
 import org.koin.android.ext.android.inject
 
 class MainActivity : BaseActivity<IMainContract.P, IMainContract.V>(), IMainContract.V {
@@ -20,6 +21,8 @@ class MainActivity : BaseActivity<IMainContract.P, IMainContract.V>(), IMainCont
     override fun prepareView() {
         super.prepareView()
 
-
+        binding.btnShow.setOnClickListener {
+            ProductActivity.startActivity(this)
+        }
     }
 }

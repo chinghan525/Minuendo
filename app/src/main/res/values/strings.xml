@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">Minuendo</string>
-    <string name="text_brightness">Brightness</string>
+
+    <string name="text_show">Show</string>
+    <string name="text_title">Adjustable hearing protection with zero compromise on sound or comfort.</string>
+    <string name="text_title_second">Designed for every environment</string>
+
+    <string name="text_function_one">Stepless adjustment\n(7–25dB)</string>
+    <string name="text_function_two">World\'s only variable passive Hi-Fi filter</string>
+    <string name="text_function_three">Natural flat frequency response</string>
+    <string name="text_function_four">Patented adjustable membrane</string>
+    <string name="text_function_five">Safe noise expose up to 120dB</string>
+    <string name="text_function_six">No electronics or batteries</string>
+
+    <string name="text_desc_one">Natural sound. No loss.</string>
+    <string name="text_desc_one_sub">A flat frequency response translates to clear and natural sound. Minuendo is able to archive a frequency response on par with custom and molded earplugs.</string>
+    <string name="text_desc_two">Patented membrane technology.</string>
+    <string name="text_desc_two_sub">Micrometer precision craftsmanship leads to no frequency degradation like the muffled sound of existing foam earplugs.</string>
+
+    <string name="text_desc_three">Stepless adjustments.</string>
+    <string name="text_desc_three_sub">By manually adjusting the lever, Minuendo can easily adjust your earplugs from open (-7dB) to closed (-25dB) and everything in betwee, so you can find your sweet spot</string>
 </resources>

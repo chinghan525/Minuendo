@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/commonBg"
+    android:orientation="vertical"
+    tools:context="com.soundbrenner.minuendo.ui.activity.main.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="@dimen/common_padding"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_padding"
+        android:layout_marginEnd="@dimen/common_padding"
+        android:text="@string/app_name"
+        android:textColor="@color/commonText"
+        android:textSize="@dimen/common_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.soundbrenner.minuendo.ui.activity.main.MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/common_padding"
+                android:orientation="vertical">
+
+                <include layout="@layout/activity_product_video" />
+
+                <include layout="@layout/activity_product_function" />
+
+                <include
+                    android:id="@+id/productDescView"
+                    layout="@layout/activity_product_description" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_padding"
+            app:srcCompat="@drawable/below_shadow" />
+
+    </RelativeLayout>
+
+</LinearLayout>
