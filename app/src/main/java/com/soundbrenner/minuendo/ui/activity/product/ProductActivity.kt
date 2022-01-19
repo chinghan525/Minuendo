@@ -11,6 +11,7 @@ import com.soundbrenner.minuendo.data.DataSource
 import com.soundbrenner.minuendo.databinding.ActivityProductBinding
 import com.soundbrenner.minuendo.ui.adapter.HorizontalImagesAdapter
 import com.soundbrenner.minuendo.ui.adapter.HorizontalImagesInBoxAdapter
+import com.soundbrenner.minuendo.ui.adapter.HorizontalReviewAdapter
 import org.koin.android.ext.android.inject
 
 class ProductActivity : BaseActivity<IProductContract.P, IProductContract.V>(), IProductContract.V {
@@ -59,7 +60,11 @@ class ProductActivity : BaseActivity<IProductContract.P, IProductContract.V>(), 
     private fun initImagesRecyclerView() {
         binding.productFuncDescView.rvImages.apply {
             layoutManager =
-                LinearLayoutManager(this@ProductActivity, LinearLayoutManager.HORIZONTAL, false)
+                LinearLayoutManager(
+                    this@ProductActivity,
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
             adapter = HorizontalImagesAdapter(DataSource.getImagesData())
         }
     }
@@ -67,7 +72,11 @@ class ProductActivity : BaseActivity<IProductContract.P, IProductContract.V>(), 
     private fun initInTheBoxRecyclerView() {
         binding.productFuncDescView.rvImagesInBox.apply {
             layoutManager =
-                LinearLayoutManager(this@ProductActivity, LinearLayoutManager.HORIZONTAL, false)
+                LinearLayoutManager(
+                    this@ProductActivity,
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
             adapter = HorizontalImagesInBoxAdapter(DataSource.getImagesInBoxData())
         }
     }
@@ -75,7 +84,12 @@ class ProductActivity : BaseActivity<IProductContract.P, IProductContract.V>(), 
     private fun initReviewRecyclerView() {
         binding.reviewView.rvReviews.apply {
             layoutManager =
-                LinearLayoutManager(this@ProductActivity, LinearLayoutManager.HORIZONTAL, false)
+                LinearLayoutManager(
+                    this@ProductActivity,
+                    LinearLayoutManager.HORIZONTAL,
+                    false
+                )
+            adapter = HorizontalReviewAdapter(DataSource.getReviewsData())
         }
     }
 
